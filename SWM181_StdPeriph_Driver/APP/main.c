@@ -65,6 +65,7 @@ int main(void)
 		counter2++;
   		printf("Hi, World!\r\n");
 		printf("this is the ProtoThrea test!\r\n");
+		printf("2023-8-21 16:59:51\r\n");
  	}
 }
 
