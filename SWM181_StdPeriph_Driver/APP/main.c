@@ -54,7 +54,7 @@ int main(void)
 	GPIO_Init(GPIOB, PIN9, 1, 0, 0, 0);			//GPIOA.5配置为输出引脚，推挽输出
 	GPIO_ClrBit(GPIOA, PIN4);
  	GPIO_SetBit(GPIOA, PIN5);
-    
+//测试ProtoThread在SWM181运行   
  	while(1==1)
  	{
 		protothread1(&pt1);

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\out\SWM181_stdperiph_lib.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\out\SWM181_stdperiph_lib.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Aug 16 17:43:34 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Aug 22 17:52:06 2023
 <BR><P>
 <H3>Maximum Stack Usage =         76 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -132,7 +132,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, main.o(.text))
+<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 130 bytes, Stack size 16 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = main &rArr; GPIO_Init &rArr; PORT_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
@@ -283,9 +283,9 @@ Global Symbols
 <P><STRONG><a name="[2f]"></a>PORT_Init</STRONG> (Thumb, 434 bytes, Stack size 20 bytes, swm181_port.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = PORT_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchToXTAL
-<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 <LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SerialInit
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchToXTAL
 </UL>
 
 <P><STRONG><a name="[40]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, system_swm181.o(.text))
@@ -295,9 +295,9 @@ Global Symbols
 <P><STRONG><a name="[32]"></a>SystemInit</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, system_swm181.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchToRC32KHz
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchToRC32KHz
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchToRC24MHz
-<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>

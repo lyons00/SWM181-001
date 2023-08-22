@@ -21,14 +21,22 @@ Target DLL:      Segger\JL2CM3.dll V2.99.38.0
 Dialog DLL:      TARMCM1.DLL V1.14.2.0
  
 <h2>Project:</h2>
-E:\ProjectFile\Sourcecode\Github\ProtoThraed-for-SWM181\SWM181_StdPeriph_Driver\SWM181_StdPeriph_Driver.uvprojx
+E:\ProjectFile\Sourcecode\Github\SWM181-001\SWM181_StdPeriph_Driver\SWM181_StdPeriph_Driver.uvprojx
 Project File Date:  08/16/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_V531\ARM\ARMCC\Bin'
 Build target 'SWM181'
-After Build - User command #1: fromelf --bin -o "E:\ProjectFile\Sourcecode\Github\ProtoThraed-for-SWM181\SWM181_StdPeriph_Driver\out\SWM181_stdperiph_lib.bin" "E:\ProjectFile\Sourcecode\Github\ProtoThraed-for-SWM181\SWM181_StdPeriph_Driver\out\SWM181_stdperiph_lib.axf"
-".\out\SWM181_stdperiph_lib.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+app\main.c(12): warning:  #550-D: variable "PT_YIELD_FLAG"  was set but never used
+  	PT_BEGIN(pt);//线程开始
+app\main.c(26): warning:  #550-D: variable "PT_YIELD_FLAG"  was set but never used
+  	PT_BEGIN(pt);//线程开始
+app\main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=2680 RO-data=224 RW-data=20 ZI-data=2052  
+After Build - User command #1: fromelf --bin -o "E:\ProjectFile\Sourcecode\Github\SWM181-001\SWM181_StdPeriph_Driver\out\SWM181_stdperiph_lib.bin" "E:\ProjectFile\Sourcecode\Github\SWM181-001\SWM181_StdPeriph_Driver\out\SWM181_stdperiph_lib.axf"
+".\out\SWM181_stdperiph_lib.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +59,7 @@ Package Vendor: Synwit
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
